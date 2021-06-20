@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-block px-8 py-2.5 rounded-md shadow-lg hover:-translate-y-0.5 focus:outline-none transform transition  uppercase tracking-wider font-semibold text-xs sm:text-base lg:text-lg;
+  }
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-light active:bg-primary-dark text-white;
+  }
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary-light active:bg-secondary-dark text-white;
+  }
+  .btn-success {
+    @apply bg-success hover:bg-success-light active:bg-success-dark text-gray-700;
+  }
+  .btn-danger {
+    @apply bg-danger hover:bg-danger-light active:bg-danger-dark text-white;
+  }
+  .btn-info {
+    @apply bg-info hover:bg-info-light active:bg-info-dark text-gray-700;
+  }
+}
